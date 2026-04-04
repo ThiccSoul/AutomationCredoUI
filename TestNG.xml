@@ -6,7 +6,7 @@
     </listeners>
     <test name="Negative Case">
         <classes>
-            <class name="org.example.NegativeCase"/>
+            <class name="org.example.LoginNegativeScenario"/>
         </classes>
     </test>
 </suite>

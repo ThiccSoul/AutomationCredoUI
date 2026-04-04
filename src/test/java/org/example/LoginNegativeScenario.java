@@ -7,7 +7,9 @@ import io.qameta.allure.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class NegativeCase extends BrowserConfig {
+import static Utils.DriverManager.getDriver;
+
+public class LoginNegativeScenario extends BrowserConfig {
 
     private LoginPageSteps loginSteps;
     private LanguagePopupSteps languagePopupSteps;
@@ -27,9 +29,9 @@ public class NegativeCase extends BrowserConfig {
     public void loginWithWrongCredentialsAndErrorAssertion(String language, String expectedErrorMessage){
         loginSteps.clickLanguageSwitchButton();
         languagePopupSteps.selectLanguage(language);
-        loginSteps.enterWrongUsername();
-        loginSteps.enterWrongPassword();
-        loginSteps.clickSubmitButton();
-        loginSteps.errorAssertion(expectedErrorMessage);
+        loginSteps.enterWrongUsername()
+                    .enterWrongPassword()
+                    .clickSubmitButton()
+                    .errorAssertion(expectedErrorMessage);
     }
 }

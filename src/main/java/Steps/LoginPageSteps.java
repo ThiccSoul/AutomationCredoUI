@@ -1,7 +1,7 @@
 package Steps;
 
 import Page.LoginPage;
-import Utils.BasePage;
+import Page.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,40 +22,50 @@ public class LoginPageSteps extends BasePage {
     }
 
     @Step("invalid username input")
-    public void enterWrongUsername() {
-        WebElement usernameField = waitUntilVisible(page.usernameInput);
+    public LoginPageSteps enterWrongUsername() {
+        WebElement usernameField = wait.waitUntilVisible(page.usernameInput);
         usernameField.clear();
         usernameField.sendKeys(randomUserName);
+
+        return this;
     }
 
     @Step("invalid password input")
-    public void enterWrongPassword() {
-        WebElement passwordField = waitUntilVisible(page.passwordInput);
+    public LoginPageSteps enterWrongPassword() {
+        WebElement passwordField = wait.waitUntilVisible(page.passwordInput);
         passwordField.clear();
         passwordField.sendKeys(randomPassword);
+
+        return this;
     }
 
     @Step("clicking on submit button")
-    public void clickSubmitButton() {
-        WebElement submitBtn = waitUntilVisible(page.submitButton);
+    public LoginPageSteps clickSubmitButton() {
+        WebElement submitBtn = wait.waitUntilVisible(page.submitButton);
         submitBtn.click();
+
+        return this;
     }
 
     @Step("click on language switch button")
-    public void clickLanguageSwitchButton() {
-        waitUntilInvisible(page.errorPanel);
-        WebElement languageSwitchBtn = waitUntilVisible(page.languagePopupButton);
+    public LoginPageSteps clickLanguageSwitchButton() {
+        wait.waitUntilInvisible(page.errorPanel);
+        WebElement languageSwitchBtn = wait.waitUntilVisible(page.languagePopupButton);
         languageSwitchBtn.click();
+
+        return this;
     }
 
     @Step("assert error after invalid login")
-    public void errorAssertion(String expectedErrorMessage) {
-        WebElement errorToast = waitUntilVisible(page.errorElement);
+    public LoginPageSteps errorAssertion(String expectedErrorMessage) {
+        WebElement errorToast = wait.waitUntilVisible(page.errorElement);
         boolean isVisible = errorToast.isDisplayed();
         String actualErrorMessage = errorToast.getText();
         softAssert.assertTrue(isVisible, "Error toast is not visible");
         softAssert.assertEquals(actualErrorMessage, expectedErrorMessage,
                 "Error message text does not match expected value");
         softAssert.assertAll();
+
+        return this;
     }
 }
