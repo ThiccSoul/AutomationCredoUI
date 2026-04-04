@@ -1,0 +1,339 @@
+2026-04-04 15:11:52 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 15:11:52 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: firefox
+2026-04-04 15:11:53 INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+2026-04-04 15:11:53 INFO  i.g.bonigarcia.wdm.online.Downloader - Downloading https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-macos-aarch64.tar.gz
+2026-04-04 15:11:54 INFO  i.g.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file geckodriver-v0.36.0-macos-aarch64.tar.gz
+2026-04-04 15:11:55 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as /Users/shnanishvili/.cache/selenium/geckodriver/mac-arm64/0.36.0/geckodriver
+2026-04-04 15:13:32 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 15:13:32 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: edge
+2026-04-04 15:13:37 WARN  i.g.b.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_RELEASE_146_MACOS to get latest version of msedgedriver (msedgedriver.azureedge.net: nodename nor servname provided, or not known)
+2026-04-04 15:13:37 WARN  i.g.b.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2026-04-04 15:13:37 INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2026-04-04 15:13:37 WARN  i.g.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net) ... trying again using latest driver stored in cache
+2026-04-04 15:13:37 WARN  i.g.b.wdm.versions.VersionDetector - Exception reading https://msedgedriver.azureedge.net/LATEST_STABLE to get latest version of msedgedriver (msedgedriver.azureedge.net)
+2026-04-04 15:13:37 INFO  i.g.bonigarcia.wdm.WebDriverManager - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2026-04-04 15:13:37 ERROR i.g.bonigarcia.wdm.WebDriverManager - There was an error managing msedgedriver (latest version) (java.net.UnknownHostException: msedgedriver.azureedge.net)
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1588)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at Utils.BrowserConfig.initializeDriver(BrowserConfig.java:39)
+	at Utils.BrowserConfig.setUp(BrowserConfig.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1573)
+	... 33 common frames omitted
+2026-04-04 15:17:53 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 15:17:53 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 15:17:54 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 15:17:54 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 15:18:00 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 15:18:12 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 15:18:12 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 15:18:12 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 15:18:12 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 15:18:15 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 15:18:21 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 15:18:44 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 15:18:44 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 15:18:44 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 15:18:44 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 15:18:48 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 15:18:58 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 16:04:38 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 16:04:38 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 16:04:38 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 16:04:38 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 16:04:42 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 16:04:47 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 16:06:36 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 16:06:36 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 16:06:36 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 16:06:36 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 16:06:40 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 16:06:51 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 16:07:04 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 16:07:04 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 16:07:04 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 16:07:04 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 16:07:08 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 16:07:18 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 16:07:26 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 16:07:26 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 16:07:26 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 16:07:26 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 16:07:29 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 16:07:40 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 16:23:16 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 16:23:16 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 16:23:16 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 16:23:16 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 16:23:20 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 16:24:01 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 16:27:05 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 16:27:05 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 16:27:05 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 16:27:05 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 16:27:09 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 16:27:43 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:14:28 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 17:14:28 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:14:28 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:14:28 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:14:32 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:14:37 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:15:29 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 17:15:29 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:15:29 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:15:29 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:15:33 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:15:43 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:19:21 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 17:19:21 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:19:21 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:19:21 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:19:25 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:19:35 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:27:22 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 17:27:22 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:27:23 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:27:23 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:27:26 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:27:55 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:32:02 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 17:32:02 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:32:02 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:32:02 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:32:06 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:32:38 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:53:25 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 17:53:25 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:53:25 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:53:25 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:53:29 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:53:37 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:54:09 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 17:54:09 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:54:09 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:54:09 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:54:13 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:54:21 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:55:13 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 17:55:13 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:55:13 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:55:13 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:55:17 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:55:25 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:56:41 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 17:56:41 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:56:41 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:56:41 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:56:45 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:56:53 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 17:58:33 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 17:58:33 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 17:58:34 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 17:58:34 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 17:58:37 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 17:58:45 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 18:02:27 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 18:02:28 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 18:02:28 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 18:02:28 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 18:02:31 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 18:03:04 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 21:58:47 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 21:58:47 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 21:58:48 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 21:58:48 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 21:58:52 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 21:59:56 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:00:31 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 22:00:31 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:00:31 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:00:31 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:00:34 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 22:00:43 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:14:36 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 22:14:36 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:14:36 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:14:36 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:14:40 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 22:15:06 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:15:53 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 22:15:53 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:15:53 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:15:53 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:15:57 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 22:16:08 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:23:28 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 22:23:28 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:23:28 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:23:28 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:23:33 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 22:23:59 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:35:14 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 22:35:14 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:35:14 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:35:14 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:35:18 INFO  Utils.BrowserConfig - chrome browser launched successfully and navigated to https://mycredo.ge/landing/main/auth
+2026-04-04 22:35:29 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:40:00 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 22:40:00 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:40:00 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:40:00 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:40:04 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 22:40:09 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:40:22 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 22:40:22 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:40:22 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:40:22 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:40:26 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 22:40:52 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:45:37 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 22:45:37 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:45:38 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:45:38 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:45:41 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 22:46:08 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:50:06 WARN  org.testng.TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+2026-04-04 22:50:06 WARN  org.testng.TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+2026-04-04 22:50:06 WARN  org.testng.TestNG - Ignoring duplicate listener : io.qameta.allure.testng.AllureTestNg
+2026-04-04 22:50:06 WARN  org.testng.TestNG - Ignoring duplicate listener : Listeners.TestListener
+2026-04-04 22:50:06 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 22:50:06 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:50:06 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:50:06 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:50:09 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 22:50:20 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 22:58:07 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Library/Caches/JetBrains/IdeaIC2025.2/temp-testng-customsuite.xml
+
+2026-04-04 22:58:07 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 22:58:07 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 22:58:07 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 22:58:11 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 22:58:37 INFO  Utils.BrowserConfig - Browser closed successfully.
+2026-04-04 23:06:19 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/shnanishvili/Desktop/MyCredoTestAutomation/TestNG.xml
+
+2026-04-04 23:06:19 INFO  Utils.BrowserConfig - Initializing WebDriver for browser: chrome
+2026-04-04 23:06:20 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-04 23:06:20 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/shnanishvili/.cache/selenium/chromedriver/mac-arm64/146.0.7680.165/chromedriver
+2026-04-04 23:06:24 INFO  Utils.BrowserConfig - chrome browser launched successfully and window maximized.
+2026-04-04 23:06:50 INFO  Utils.BrowserConfig - Browser closed successfully.

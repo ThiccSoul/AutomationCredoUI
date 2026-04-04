@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "[testng.org](https://testng.org/testng-1.0.dtd)" >
+<suite name="Cross-Browser Suite">
+    <parameter name="browser" value="chrome"/>
+    <listeners>
+        <listener class-name="Listeners.TestListener"/>
+    </listeners>
+    <test name="Negative Case">
+        <classes>
+            <class name="org.example.NegativeCase"/>
+        </classes>
+    </test>
+</suite>
