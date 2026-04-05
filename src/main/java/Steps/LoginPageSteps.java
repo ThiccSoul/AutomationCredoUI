@@ -5,13 +5,12 @@ import Page.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.asserts.SoftAssert;
+import org.testng.Assert;
 import org.apache.commons.lang3.RandomStringUtils;
 
 public class LoginPageSteps extends BasePage {
 
     private final LoginPage page;
-    private final SoftAssert softAssert = new SoftAssert();
     String randomUserName = RandomStringUtils.randomAlphabetic(8);
     String randomPassword = RandomStringUtils.randomAlphanumeric(8);
 
@@ -49,23 +48,19 @@ public class LoginPageSteps extends BasePage {
 
     @Step("click on language switch button")
     public LoginPageSteps clickLanguageSwitchButton() {
-        wait.waitUntilInvisible(page.errorPanel);
+        wait.waitUntilInvisible(page.errorElement);
         WebElement languageSwitchBtn = wait.waitUntilVisible(page.languagePopupButton);
         languageSwitchBtn.click();
 
         return this;
     }
 
-    @Step("assert error after invalid login")
-    public LoginPageSteps errorAssertion(String expectedErrorMessage) {
-        WebElement errorToast = wait.waitUntilVisible(page.errorElement);
-        boolean isVisible = errorToast.isDisplayed();
-        String actualErrorMessage = errorToast.getText();
-        softAssert.assertTrue(isVisible, "Error toast is not visible");
-        softAssert.assertEquals(actualErrorMessage, expectedErrorMessage,
-                "Error message text does not match expected value");
-        softAssert.assertAll();
+    @Step("asserting correct error message is shown")
+    public void errorAssertion(String expectedErrorMessage) {
+        wait.waitUntilVisible(page.errorElement);
+        WebElement errorElem = wait.waitUntilVisible(page.errorPanel);
+        String actualErrorMessage = errorElem.getText().trim();
+        Assert.assertEquals(actualErrorMessage, expectedErrorMessage, "Error message mismatch!");
 
-        return this;
     }
 }

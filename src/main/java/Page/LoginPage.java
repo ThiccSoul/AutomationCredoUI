@@ -1,15 +1,27 @@
 package Page;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
 public class LoginPage extends BasePage {
 
-    public final By
-            usernameInput = By.cssSelector("#userName"),
-            passwordInput = By.cssSelector("#newPass"),
-            submitButton  = By.cssSelector("#submitAuth"),
-            errorElement  = By.cssSelector(".notification-container.error"),
-            languagePopupButton = By.cssSelector("#languageSwitcherBtn"),
-            errorPanel = By.cssSelector("app-notification-panel .notification-container.error");
+    @FindBy(css = "#userName")
+    public WebElement usernameInput;
+
+    @FindBy(css = "#newPass")
+    public WebElement passwordInput;
+
+    @FindBy(css = "#submitAuth")
+    public WebElement submitButton;
+
+    @FindBy(css = ".notification-container.error")
+    public WebElement errorElement;
+
+    @FindBy(css = "#languageSwitcherBtn")
+    public WebElement languagePopupButton;
+
+    @FindBy(css = "app-notification-panel .notification-container.error")
+    public WebElement errorPanel;
 
 
     public LoginPage(WebDriver driver) {

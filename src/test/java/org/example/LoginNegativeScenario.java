@@ -28,7 +28,7 @@ public class LoginNegativeScenario extends BrowserConfig {
     @Test(dataProvider = "languagesAndTheirErrorTexts", dataProviderClass = Data.DataSets.class)
     public void loginWithWrongCredentialsAndErrorAssertion(String language, String expectedErrorMessage){
         loginSteps.clickLanguageSwitchButton();
-        languagePopupSteps.selectLanguage(language);
+        languagePopupSteps.clickLanguageElement(language);
         loginSteps.enterWrongUsername()
                     .enterWrongPassword()
                     .clickSubmitButton()

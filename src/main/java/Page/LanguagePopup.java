@@ -2,6 +2,7 @@ package Page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LanguagePopup extends BasePage {
 
@@ -13,7 +14,8 @@ public class LanguagePopup extends BasePage {
         return driver;
     }
 
-    public By languageElement(String language) {
-        return By.xpath("//div[@class='popup-wrapper']//p[text()='" + language + "']");
+    public WebElement languageElement(String language) {
+        return driver.findElement(By.xpath("//div[@class='popup-wrapper']//p[text()='" + language + "']"));
     }
 }
+

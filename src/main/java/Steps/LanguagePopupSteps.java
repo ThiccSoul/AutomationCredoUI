@@ -4,6 +4,7 @@ import Page.LanguagePopup;
 import Page.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LanguagePopupSteps extends BasePage{
 
@@ -15,11 +16,11 @@ public class LanguagePopupSteps extends BasePage{
     }
 
     @Step("clicking on desired language button")
-    public LanguagePopupSteps selectLanguage(String language) {
-        wait.waitUntilVisible(page.languageElement(language)).click();
+    public LanguagePopupSteps clickLanguageElement(String language) {
+        WebElement langElem = wait.waitUntilVisible(page.languageElement(language));
+        langElem.click();
         return this;
     }
-
-
 }
+
 

@@ -15,11 +15,11 @@ public class WaitUtils {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
-    public WebElement waitUntilVisible(By locator) {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    public WebElement waitUntilVisible(WebElement element) {
+        return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public void waitUntilInvisible(By locator) {
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    public void waitUntilInvisible(WebElement element) {
+        wait.until(ExpectedConditions.invisibilityOf(element));
     }
 }

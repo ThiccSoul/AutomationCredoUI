@@ -1,6 +1,5 @@
 package Utils;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.edge.*;
@@ -30,18 +29,11 @@ public class BrowserConfig {
     }
 
     private WebDriver initializeDriver(String browser) {
-        switch (browser.toLowerCase()) {
-            case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                return new FirefoxDriver(new FirefoxOptions());
-            case "edge":
-                WebDriverManager.edgedriver().setup();
-                return new EdgeDriver(new EdgeOptions());
-            case "chrome":
-            default:
-                WebDriverManager.chromedriver().setup();
-                return new ChromeDriver(new ChromeOptions());
-        }
+        return switch (browser.toLowerCase()) {
+            case "firefox" -> new FirefoxDriver(new FirefoxOptions());
+            case "edge" -> new EdgeDriver(new EdgeOptions());
+            default -> new ChromeDriver(new ChromeOptions());
+        };
     }
 
     @AfterClass(alwaysRun = true)
